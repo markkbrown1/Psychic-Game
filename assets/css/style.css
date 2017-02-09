@@ -1,4 +1,5 @@
 
+
 .jumbotron{
 padding:0;
 background-color:: transparent;
@@ -8,9 +9,15 @@ h1, h2, h3 {
 	font-family: "Roboto"; sans-serif;
 	text-transform: uppercase;
 	color: yellow;
-	font-weight: 50;
+	font-weight: 100;
 	text-decoration: underline;
 }
 p{
+	color:black;
+}
+#guessed{
+	font-weight: bold;
+	color: yellow;
+
 
 }

@@ -13,5 +13,18 @@ var tries = 10;
 
         if ((userGuess === computerGuess)) {
         	wins++;
-        	else losses++;
+        	}
+        	// Here we create the HTML that will be injected into our div and displayed on the page.
+          var html = "<p>Press any letter to start playing!</p>" +
+          "<p>wins: " + wins + "</p>" +
+          "<p>losses: " + losses + "</p>" +
+          "<p>tries: " + tries + "</p>";
+          // Injecting the HTML we just created into our div and updating the game information on our page.
+          document.querySelector("#scoresheet").innerHTML = html;
         }
+         var userText = document.getElementById("guessed");
+
+      // Next, we give JavaScript a function to execute when onkeyup event fires.
+      document.onkeyup = function() {
+        userText.textContent = event.key;
+      };
